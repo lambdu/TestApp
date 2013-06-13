@@ -1,4 +1,5 @@
 TestApp::Application.routes.draw do
+  root to: 'static_pages#home'
   controller :sessions do
     get 'login' => :new
     post 'login' => :create
@@ -6,7 +7,7 @@ TestApp::Application.routes.draw do
   end
   get "sessions/create"
   get "sessions/destroy"
-  root to: 'static_pages#home'
+
 
   match '/help' => 'static_pages#help', via: :get
   match '/new_user' => 'users#new', via: [:get, :post]
