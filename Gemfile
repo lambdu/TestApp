@@ -6,6 +6,8 @@ gem 'bootstrap-sass', '2.1'
 gem 'jquery-rails'
 gem 'jquery-turbolinks'
 gem 'taps'
+gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
+gem 'rails3_serve_static_assets', github: 'heroku/rails3_serve_static_assets'
 
 # Use sqlite3 as the database for Active Record
 group :development do
