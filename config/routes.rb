@@ -11,6 +11,7 @@ TestApp::Application.routes.draw do
 
   match '/help' => 'static_pages#help', via: :get
   match '/new_user' => 'users#new', via: [:get, :post]
+  match '/user_index' => 'users#index', via: :get
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
