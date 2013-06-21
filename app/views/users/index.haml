@@ -1,0 +1,12 @@
+%h1 Listing users
+%table
+  %thread
+    %tr
+      %th Name
+      %th
+  %tbody
+    - @users.each do |user|
+      %tr
+        %td= user.name
+        %td= link_to t(".show"), user
+%br

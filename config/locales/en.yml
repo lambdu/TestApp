@@ -20,4 +20,43 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  static_pages:
+    signup: "Sign up now!"
+    hello: "Welcome to the Test App"
+    hello_body: "This is the home page for the test application." 
+    about_header: "About Test App"
+    about_body: "This Application was created with Ruby on Rails 4.0.0"
+
+  layouts:
+    application:
+      home: "Home"
+      help: "Help"
+      users: "Users"
+      profile: "Profile"
+      settings: "Settings"
+      signout: "Sign out"
+      signin: "Sign in"
+      newuser: "New users"
+
+  sessions:
+    new:
+      login: "Please log in"
+      name: "User name"
+      password: "Password"
+      submit: "login in"
+
+  users:
+    edit:
+      profile: "profile"
+      all: "index"
+    index:
+      show: "Profile"
+    show:
+      edit: "Edit"
+      index: "Index"
+    form:
+      error_message: "Prohibited this User from being saved."
+      name: "User name"
+      password: "Password"
+      confirmation: "Confirm password"
+      submit: "Create user"

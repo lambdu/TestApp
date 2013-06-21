@@ -1,0 +1,17 @@
+= form_for(@user) do |f|
+  -if @user.errors.any?
+    %div.alert
+      %h2= "#{pluralize(@user.errors.count, "error")} #{t(".error_message")}"
+      %ul
+        - @user.errors.full_messages.each do |msg|
+          %li= msg
+  %div.field
+    = f.label :name, t(".name")
+    = f.text_field :name
+  %div.field
+    = f.label :password, t(".password")
+    = f.password_field :password
+  %div
+    = f.label :password_confirmation, t(".confirmation")
+    = f.password_field :password
+  = f.submit t(".submit"), :class => "btn btn-large btn-primary"
